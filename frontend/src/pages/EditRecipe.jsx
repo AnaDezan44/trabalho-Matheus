@@ -43,26 +43,26 @@ export default function EditRecipe() {
             <div className='container'>
                 <form className='form' onSubmit={onHandleSubmit}>
                     <div className='form-control'>
-                        <label>Title</label>
+                        <label>Titulo</label>
                         <input type="text" className='input' name="title" onChange={onHandleChange} value={recipeData.title}></input>
                     </div>
                     <div className='form-control'>
-                        <label>Time</label>
+                        <label>Tempo de preparo</label>
                         <input type="text" className='input' name="time" onChange={onHandleChange} value={recipeData.time}></input>
                     </div>
                     <div className='form-control'>
-                        <label>Ingredients</label>
+                        <label>Ingredientes</label>
                         <textarea type="text" className='input-textarea' name="ingredients" rows="5" onChange={onHandleChange} value={recipeData.ingredients}></textarea>
                     </div>
                     <div className='form-control'>
-                        <label>Instructions</label>
+                        <label>Modo de preparo</label>
                         <textarea type="text" className='input-textarea' name="instructions" rows="5" onChange={onHandleChange} value={recipeData.instructions}></textarea>
                     </div>
                     <div className='form-control'>
-                        <label>Recipe Image</label>
+                        <label>Imagem</label>
                         <input type="file" className='input' name="file" onChange={onHandleChange}></input>
                     </div>
-                    <button type="submit">Edit Recipe</button>
+                    <button type="submit">Editar</button>
                 </form>
             </div>
         </>

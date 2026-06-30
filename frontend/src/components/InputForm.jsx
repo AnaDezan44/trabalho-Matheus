@@ -27,7 +27,7 @@ export default function InputForm({setIsOpen}) {
                 <input type="email" className='input' onChange={(e)=>setEmail(e.target.value)} required></input>
             </div>
             <div className='form-control'>
-                <label>Password</label>
+                <label>Senha</label>
                 <input type="password" className='input' onChange={(e)=>setPassword(e.target.value)} required></input>
             </div>
             <button type='submit'>{(isSignUp) ? "Sign Up": "Login"}</button><br></br>
